@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.menu-item {
+    background: #ff4081;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+.menu-open-button {
+    background: #ff4081;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.menu-open:checked + .menu-open-button {
+    transform: rotate(45deg);
+}
+
+.menu-open:checked ~ .menu-item {
+    transform: translateY(0);
+}
+
+.menu-item:nth-child(3) {
+    transform: translateY(-70px);
+}
+
+.menu-item:nth-child(4) {
+    transform: translateY(-140px);
+}
+
+.menu-item:nth-child(5) {
+    transform: translateY(-210px);
+}
+
+.menu-item:nth-child(6) {
+    transform: translateY(-280px);
+}
+
+.menu-item:nth-child(7) {
+    transform: translateY(-350px);
+}
+
+.menu-open + .menu-open-button span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+.menu-open + .menu-open-button span:nth-child(1) {
+    top: 20px;
+    transform: rotate(0);
+}
+
+.menu-open + .menu-open-button span:nth-child(2) {
+    top: 30px;
+    transform: rotate(0);
+}
+
+.menu-open + .menu-open-button span:nth-child(3) {
+    top: 40px;
+    transform: rotate(0);
+}
+
+.menu-open:checked + .menu-open-button span:nth-child(1) {
+    top: 30px;
+    transform: rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open:checked + .menu-open-button span:nth-child(3) {
+    top: 30px;
+    transform: rotate(-45deg);
+}
