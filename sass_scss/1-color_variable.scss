@@ -1,0 +1,10 @@
+/* Task 1: Color variable */
+$main-color: #3D3D3D;
+
+body {
+  color: $main-color;
+}
+
+p {
+  color: $main-color;
+}
