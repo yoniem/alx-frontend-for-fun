@@ -1,0 +1,5 @@
+/* Styles for making the "works" card focus visible */
+.card-work:focus-within .card-outer {
+  outline: 3px solid #FFA500; /* Change this color as needed */
+  outline-offset: 4px;
+}
