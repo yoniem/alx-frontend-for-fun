@@ -1,34 +1,23 @@
-body {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.primary-btn {
-  color: #ffffff;
-  background-color: #007bff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.primary-btn:hover {
-  background-color: #0056b3;
+/* Helpers */
+.off-screen {
+  position: absolute;
+  left: -100vw;
 }
 
 .skip-link {
-  position: absolute;
-  top: -40px;
+  background: var(--color-black);
+  color: var(--color-white);
   left: 0;
-  background: #000;
-  color: #fff;
-  padding: 8px;
-  z-index: 100;
+  padding: .7rem;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  z-index: 10;
+  transform: translateY(-1rem);
+  transition: transform .2s ease-in-out, opacity .2s ease-in-out;
 }
 
 .skip-link:focus {
-  top: 0;
+  opacity: 1;
+  transform: translateY(0);
 }

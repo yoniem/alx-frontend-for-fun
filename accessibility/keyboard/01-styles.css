@@ -1,20 +1,23 @@
-body {
-  color: #000000;
-  background-color: #ffffff;
+/* Helpers */
+.off-screen {
+  left: -100vw;
+  position: absolute;
 }
 
-.primary-btn {
-  color: #ffffff;
-  background-color: #007bff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
+.skip-link {
+  background: var(--color-black);
+  color: var(--color-white);
+  left: 0;
+  padding: 0.7rem;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  z-index: 10;
+  transform: translateY(-1rem);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-.primary-btn:hover {
-  background-color: #0056b3;
+.skip-link:focus {
+  opacity: 1;
+  transform: translateY(0);
 }
