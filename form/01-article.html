@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <link rel="stylesheet" href="css/00-styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container container">
+      <a href="#" class="header-logo">
+        <img src="images/logo.png" alt="Techium logo" width="160" height="40">
+      </a>
+      <nav class="navbar-menu">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#latest_news" class="nav-link">Latest news</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-hero" style="background-image: url('images/hero-bg.jpg');">
+      <div class="container">
+        <div class="section-body">
+          <p class="section-category">Latest news</p>
+          <h2 class="section-title">Techium Blog Post</h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="container main-article">
+      <div class="post">
+        <article class="post-content">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed haec omittamus; Hoc Hieronymus summum bonum esse dixit. Duo Reges: constructio interrete.</p>
+          <blockquote>Morbi pharetra congue ante ac tincidunt. Donec euismod eu mauris nec laoreet. Praesent id sodales ipsum. Aliquam erat volutpat. Ut porta sem eget libero faucibus, eget convallis nisi finibus.</blockquote>
+          <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum accumsan euismod nunc quis viverra.</p>
+          <p>Et nemo nimium beatus est; Ratio quidem vestra sic cogit. Itaque ab his ordiamur. Facillimum id quidem est, inquam. Consequentia exquirere, quoad sit id, quod volumus, effectum. Hanc quoque iucunditatem, si vis, transfer in animum;</p>
+          <h3>Profectus in exilium Tubulus statim nec respondere ausus</h3>
+          <ul>
+            <li>Sed ego in hoc resisto;</li>
+            <li>Id enim volumus, id contendimus, ut officii fructus sit ipsum officium.</li>
+            <li>Sed quod proximum fuit non vidit.</li>
+          </ul>
+          <p>Primum divisit ineleganter; Minime vero, inquit ille, consentit. Moriatur, inquit. Immo alio genere;</p>
+          <footer class="post-footer">
+            <div class="post-tags">
+              <a href="#" class="post-tag">CSS</a>
+              <a href="#" class="post-tag">Express.js</a>
+              <a href="#" class="post-tag">MongoDB</a>
+              <a href="#" class="post-tag">HTML</a>
+              <a href="#" class="post-tag">Node.js</a>
+              <a href="#" class="post-tag">React</a>
+            </div>
+            <a href="#post-comments" class="post-comment-count">14 comments</a>
+          </footer>
+        </article>
+        <aside class="post-author">
+          <figure class="author-image">
+            <img src="images/zoe-peeple.png" alt="Zoe Peeple" width="60" height="60">
+          </figure>
+          <div class="author-details">
+            <h3>About the author</h3>
+            <p class="author-name">Zoe Peeple</p>
+            <p class="author-bio">This is the author description. Add author information.</p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Comment section -->
+      <section class="post-comments">
+        <header>
+          <h2 class="section-title">Leave a comment</h2>
+          <p>All fields are required.</p>
+        </header>
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" data-section-theme="dark">
+    <div class="container">
+      <section class="footer-brand">
+        <img src="images/logo-white.png" alt="Techium logo" width="160" height="40">
+      </section>
+      <nav class="footer-menu">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#latest_news" class="nav-link">Latest news</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="footer-social">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Facebook</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Instagram</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Twitter</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">YouTube</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
