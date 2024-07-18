@@ -1,29 +1,18 @@
-/* 04-styles.css */
+/* 01-styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Added font-family */
+    line-height: 1.6; /* Added line-height */
+}
 
 .container {
     width: 80%; /* Changed width from 100% to 80% */
     margin: 0 auto; /* Added margin */
 }
 
-.card {
-    background-color: var(--color-white); /* Added background-color property */
-    padding: 1.5rem; /* Added padding */
-    margin-bottom: 1rem; /* Added margin-bottom */
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Added box-shadow */
-}
-
-.card h2 {
-    color: var(--color-primary); /* Added color property */
-}
-
-.card p {
-    color: var(--color-grey); /* Added color property */
-    line-height: 1.6; /* Added line-height */
-}
-
-.btn {
+.btn-primary {
     display: inline-block; /* Added display property */
-    padding: 0.5rem 1rem; /* Added padding */
+    padding: 0.8rem 1.5rem; /* Added padding */
     background-color: var(--color-primary); /* Added background-color property */
     color: var(--color-white); /* Added color property */
     text-decoration: none; /* Added text-decoration property */
@@ -32,6 +21,14 @@
     transition: background-color 0.3s ease; /* Added transition */
 }
 
-.btn:hover {
+.btn-primary:hover {
     background-color: var(--color-primary-dark); /* Added background-color property */
+}
+
+.header {
+    background-color: var(--color-primary); /* Added background-color property */
+    color: var(--color-white); /* Added color property */
+    text-align: center; /* Added text-align property */
+    padding: 1rem 0; /* Added padding */
+    margin-bottom: 2rem; /* Added margin-bottom */
 }

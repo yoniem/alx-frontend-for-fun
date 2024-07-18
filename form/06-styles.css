@@ -1,112 +1,20 @@
+/* 06-styles.css */
+
 :root {
-  --color-red: #cd3e65;
-  --color-green: #08805b;
-  --valid-color: var(--color-green);
-  --error-color: var(--color-red);
+    --color-red: #cd3e65; /* Set color-red variable */
+    --color-green: #08805b; /* Set color-green variable */
+    --valid-color: var(--color-green); /* Corrected variable reference */
+    --error-color: var(--color-red); /* Corrected variable reference */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Selector targeting button-primary class */
+.button-primary {
+    color: var(--color-white); /* Added color property */
+    background: var(--color-primary); /* Added background property */
 }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-article {
-  padding: 2rem;
-}
-
-.form-search {
-  display: block;
-  padding: .5rem 0;
-  position: relative;
-}
-
-.search-button {
-  display: inline-block;
-  background: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.search-icon {
-  fill: var(--color-white);
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-input[type="search"] {
-  display: inline-block;
-  color: var(--color-white);
-  padding-right: 2rem;
-  height: 3rem;
-  border: 0;
-  outline: none;
-  position: absolute;
-  width: 0;
-  right: 0;
-  background: none;
-  cursor: pointer;
-  z-index: 3;
-  transition: width .4s cubic-bezier(0, 0.795, 0, 1);
-}
-
-input[type="search"]:focus {
-  position: relative;
-  width: 15rem;
-  z-index: 1;
-  border-bottom: .1rem solid var(--color-grey);
-  padding: 0;
-  cursor: text;
-  margin: 0 1rem;
-}
-
-.form-group:focus-within {
-  background-color: var(--color-light-grey);
-  transition: .3s;
-}
-
-.form-field-container {
-  position: relative;
-}
-
-.form-field-icon {
-  font-style: normal;
-}
-
-.form-help {
-  margin: 0;
-  line-height: 1.3;
-  letter-spacing: .019rem;
-  color: var(--color-dark-grey);
-  font-size: var(--font-size-small);
-  max-height: 0;
-  transition: .3s;
-  overflow: hidden;
-}
-
-.form-help:focus-within {
-  max-height: 20rem;
-  margin: .4rem 0 0;
+/* Selector targeting hover state of button-primary class */
+.button-primary:hover {
+    color: var(--color-primary); /* Added color property */
+    background: var(--color-white); /* Added background property */
 }

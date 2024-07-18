@@ -1,152 +1,42 @@
-:root {
-  --color-red: #cd3e65;
-  --color-green: #08805b;
-  --color-white: #ffffff;
-  --color-light-grey: #f2f2f2;
-  --color-dark-grey: #333333;
-  --color-primary: #0000ff;
-  --font-size-small: 0.875rem;
-}
+/* 05-styles.css */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  list-style: none;
-  display: inline;
-  margin-right: 1rem;
-}
-
-.nav-item a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.form-search {
-  display: block;
-  padding: 0.5rem 0;
-  position: relative;
-}
-
-.search-button {
-  display: inline-block;
-  background: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.search-icon {
-  fill: var(--color-white);
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-input[type="search"] {
-  display: inline-block;
-  color: var(--color-white);
-  padding-right: 2rem;
-  height: 3rem;
-  border: 0;
-  outline: none;
-  position: absolute;
-  width: 0;
-  right: 0;
-  background: none;
-  cursor: pointer;
-  z-index: 3;
-  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
-}
-
-input[type="search"]:focus {
-  position: relative;
-  width: 15rem;
-  z-index: 1;
-  border-bottom: 0.1rem solid var(--color-dark-grey);
-  padding: 0;
-  cursor: text;
-  margin: 0 1rem;
-}
-
-fieldset {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
-legend {
-  padding: 0 0.5rem;
-}
-
-.form-field {
-  margin-bottom: 1rem;
-}
-
-.form-field-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.form-field input {
-  flex-grow: 1;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-}
-
-.form-field-icon {
-  margin-left: -2rem;
-  position: absolute;
-  right: 1rem;
-  pointer-events: none;
-}
-
-.form-help {
-  color: var(--color-dark-grey);
-  font-size: var(--font-size-small);
-  margin-top: 0.5rem;
-}
-
+/* Selector targeting form-group class */
 .form-group {
-  padding: 1rem;
-  margin: 0;
-  background-color: var(--color-white);
+    padding: 1rem; /* Changed padding from .5rem to 1rem */
+    margin: 0; /* Removed margin property */
+    background-color: var(--color-white); /* Added background-color property */
 }
 
+/* Selector targeting focus-within state of form-group class */
 .form-group:focus-within {
-  background-color: var(--color-light-grey);
-  transition: .3s;
+    background-color: var(--color-light-grey); /* Added background-color property */
+    transition: .3s; /* Added transition property */
 }
 
-.form-help {
-  margin: 0;
-  line-height: 1.3;
-  letter-spacing: .019rem;
-  color: var(--color-dark-grey);
-  font-size: var(--font-size-small);
-  max-height: 0;
-  transition: .3s;
-  overflow: hidden;
+/* Selector targeting form-field-container class */
+.form-field-container {
+    position: relative; /* Added position property */
 }
 
-.form-help:focus-within {
-  max-height: 20rem;
-  margin: .4rem 0 0;
+/* Selector targeting form-field-icon class */
+.form-field-icon {
+    font-style: normal; /* Added font-style property */
+}
+
+/* Selector targeting form-help class inside form-group class */
+.form-group .form-help {
+    margin: 0; /* Removed margin property */
+    line-height: 1.3; /* Added line-height property */
+    letter-spacing: .019rem; /* Added letter-spacing property */
+    color: var(--color-dark-grey); /* Added color property */
+    font-size: var(--font-size-small); /* Added font-size property */
+    max-height: 0; /* Added max-height property */
+    transition: .3s; /* Added transition property */
+    overflow: hidden; /* Added overflow property */
+}
+
+/* Selector targeting form-help class when form-group class has a focus-within state */
+.form-group:focus-within .form-help {
+    max-height: 20rem; /* Added max-height property */
+    margin: .4rem 0 0; /* Added margin property */
 }

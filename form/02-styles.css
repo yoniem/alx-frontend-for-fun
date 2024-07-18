@@ -1,224 +1,37 @@
-/* Basic CSS reset for better consistency across browsers */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* 02-styles.css */
 
-/* Body styling */
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Container styling */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 800px; /* Changed max-width from 100% to 800px */
+    margin: 0 auto; /* Added margin */
 }
 
-/* Header styling */
-.header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
+.card {
+    background-color: var(--color-white); /* Added background-color property */
+    padding: 1.5rem; /* Added padding */
+    margin-bottom: 1rem; /* Added margin-bottom */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Added box-shadow */
 }
 
-.header .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.card h2 {
+    color: var(--color-primary); /* Added color property */
 }
 
-.header .navbar-menu .nav {
-  display: flex;
+.card p {
+    color: var(--color-grey); /* Added color property */
+    line-height: 1.6; /* Added line-height */
 }
 
-.header .navbar-menu .nav-item {
-  margin-left: 1rem;
+.btn {
+    display: inline-block; /* Added display property */
+    padding: 0.5rem 1rem; /* Added padding */
+    background-color: var(--color-primary); /* Added background-color property */
+    color: var(--color-white); /* Added color property */
+    text-decoration: none; /* Added text-decoration property */
+    border: none; /* Added border property */
+    border-radius: 4px; /* Added border-radius property */
+    transition: background-color 0.3s ease; /* Added transition */
 }
 
-.header .navbar-menu .nav-link {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-/* Hero section styling */
-.section-hero {
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 5rem 0;
-}
-
-.section-hero .section-body {
-  text-align: center;
-}
-
-.section-hero .section-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.section-hero .section-category {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Main article styling */
-.main-article {
-  padding: 2rem 0;
-}
-
-.post {
-  margin-bottom: 2rem;
-}
-
-.post-content h2, .post-content h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.post-content p {
-  margin-bottom: 1rem;
-}
-
-.post-content ul {
-  margin-left: 2rem;
-  list-style-type: disc;
-}
-
-.post-content blockquote {
-  background: #f4f4f4;
-  border-left: 5px solid #333;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  font-style: italic;
-}
-
-/* Post footer styling */
-.post-footer {
-  margin-top: 2rem;
-}
-
-.post-tags .post-tag {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  padding: 0.25rem 0.5rem;
-  margin-right: 0.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.post-comment-count {
-  display: block;
-  margin-top: 1rem;
-  color: #333;
-  text-decoration: none;
-}
-
-/* Author section styling */
-.post-author {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  border-top: 1px solid #ddd;
-}
-
-.author-image {
-  margin-right: 1rem;
-}
-
-.author-details h3 {
-  margin-bottom: 0.5rem;
-}
-
-.author-details .author-bio {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Comment section styling */
-.post-comments {
-  margin-top: 2rem;
-}
-
-.post-comments .section-title {
-  margin-bottom: 1rem;
-}
-
-.post-comments .form-group {
-  margin-bottom: 1rem;
-}
-
-.post-comments label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.post-comments input[type="text"], .post-comments input[type="email"], .post-comments textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.post-comments button {
-  background: #333;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Footer styling */
-.footer {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-.footer .footer-brand img {
-  width: 160px;
-}
-
-.footer .footer-menu .nav {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.footer .footer-menu .nav-item {
-  margin: 0 1rem;
-}
-
-.footer .footer-menu .nav-link {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer .footer-social .nav {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.footer .footer-social .nav-item {
-  margin: 0 1rem;
-}
-
-.footer .footer-social .nav-link {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Dark section theme styling */
-[data-section-theme="dark"] {
-  background: #333;
-  color: #fff;
+.btn:hover {
+    background-color: var(--color-primary-dark); /* Added background-color property */
 }

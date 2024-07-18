@@ -1,55 +1,16 @@
-:root {
-    --color-white: #ffffff;
-    --color-grey: #cccccc;
-    --color-dark-grey: #333333;
-}
+/* 07-styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--color-dark-grey);
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav-item a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 1.2rem;
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .form-search {
-    display: block;
-    padding: .5rem 0;
+    display: inline-block;
     position: relative;
 }
 
-.search-button {
-    display: inline-block;
-    background: transparent;
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-.search-icon {
-    fill: var(--color-white);
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-input[type="search"] {
+#search-input {
     display: inline-block;
     color: var(--color-white);
     padding-right: 2rem;
@@ -65,7 +26,7 @@ input[type="search"] {
     transition: width .4s cubic-bezier(0, 0.795, 0, 1);
 }
 
-input[type="search"]:focus {
+.form-search:focus-within #search-input {
     position: relative;
     width: 15rem;
     z-index: 1;
@@ -73,4 +34,18 @@ input[type="search"]:focus {
     padding: 0;
     cursor: text;
     margin: 0 1rem;
+}
+
+.search-button {
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.search-icon {
+    fill: var(--color-white);
+    width: 1.5rem;
+    height: 1.5rem;
 }

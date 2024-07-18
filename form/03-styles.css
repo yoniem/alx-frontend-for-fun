@@ -1,57 +1,37 @@
-:root {
-    --color-primary: #3498db;
-    --color-secondary: #2ecc71;
-    --color-dark: #2c3e50;
-    --color-light: #ecf0f1;
-    --font-main: 'Helvetica Neue', sans-serif;
-}
-
-body {
-    font-family: var(--font-main);
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-}
-
-header {
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    padding: 1rem;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-nav {
-    background-color: var(--color-secondary);
-    padding: 0.5rem;
-    text-align: center;
-}
-
-nav a {
-    color: var(--color-light);
-    text-decoration: none;
-    margin: 0 1rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
+/* 03-styles.css */
 
 .container {
-    padding: 2rem;
+    max-width: 800px; /* Changed max-width from 100% to 800px */
+    margin: 0 auto; /* Added margin */
 }
 
-.footer {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.card {
+    background-color: var(--color-white); /* Added background-color property */
+    padding: 1.5rem; /* Added padding */
+    margin-bottom: 1rem; /* Added margin-bottom */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Added box-shadow */
+}
+
+.card h2 {
+    color: var(--color-primary); /* Added color property */
+}
+
+.card p {
+    color: var(--color-grey); /* Added color property */
+    line-height: 1.6; /* Added line-height */
+}
+
+.btn {
+    display: inline-block; /* Added display property */
+    padding: 0.5rem 1rem; /* Added padding */
+    background-color: var(--color-primary); /* Added background-color property */
+    color: var(--color-white); /* Added color property */
+    text-decoration: none; /* Added text-decoration property */
+    border: none; /* Added border property */
+    border-radius: 4px; /* Added border-radius property */
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+.btn:hover {
+    background-color: var(--color-primary-dark); /* Added background-color property */
 }

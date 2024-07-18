@@ -7,29 +7,21 @@
     <link rel="stylesheet" href="07-styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Services</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
-                <li class="nav-item">
-                    <form class="form-search" action="#" method="post">
-                        <input type="search" name="q" id="search-input" placeholder="Search…" aria-label="Search">
-                        <button type="submit" class="search-button">
-                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.02 5.01 12.52 2.5 9.5 2.5S4.98 5.01 4.98 8.02c0 3.01 2.5 5.52 5.52 5.52 1.34 0 2.57-.47 3.54-1.25l.27.28v.79l4.99 5.01c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-5.01-4.99zM9.5 13.5c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5z"/>
-                            </svg>
-                        </button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <article>
-        <h1>Welcome to Our Website</h1>
-        <p>Here you can find information about our services and contact details. Use the search form above to find what you need quickly.</p>
-    </article>
+    <nav>
+        <ul>
+            <li class="nav-item">Menu Item 1</li>
+            <li class="nav-item">Menu Item 2</li>
+            <li class="nav-item">
+                <form class="form-search" action="#" method="post">
+                    <input type="search" id="search-input" name="q" placeholder="Search..." aria-label="Search">
+                    <button type="submit" class="search-button">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="var(--color-white)" d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 1 0 7 8.5 6.5 6.5 0 0 0 13.5 15c.73 0 1.41-.3 1.91-.79l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-2 0C11.01 14 9 11.99 9 9.5S11.01 5 13.5 5 18 7.01 18 9.5 15.99 14 13.5 14z"/>
+                        </svg>
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
