@@ -1,129 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techium Blog</title>
-    <link rel="stylesheet" href="05-styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Page</title>
+  <link rel="stylesheet" href="05-styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <div class="header-brand">
-                <h1>Techium Blog</h1>
-            </div>
-            <nav class="navbar-menu">
-                <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+  <header>
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Articles</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item">
+          <form class="form-search" action="#" method="post">
+            <input type="search" name="q" id="search-input" placeholder="Search..." aria-label="Search">
+            <button type="submit" class="search-button">
+              <svg class="search-icon" viewBox="0 0 24 24">
+                <path d="M21.71 20.29l-5.64-5.64a7.5 7.5 0 1 0-1.41 1.41l5.64 5.64a1 1 0 0 0 1.41-1.41zM4 10a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"></path>
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Main Article Title</h1>
+      <p>This is the main content of the article page.</p>
+
+      <fieldset>
+        <legend>Form Section 1</legend>
+        <div class="form-field">
+          <span class="form-field-container">
+            <input type="text" id="name" name="name" required>
+            <i class="form-field-icon"></i>
+          </span>
+          <p class="form-help">Please enter your name.</p>
         </div>
-    </header>
-    
-    <main class="main-article container">
-        <article class="post">
-            <header class="section-hero" style="background-image: url('hero.jpg');">
-                <div class="section-body">
-                    <h2 class="section-title">The Ultimate Guide to Tech</h2>
-                    <p class="section-category">Tech | January 1, 2024</p>
-                </div>
-            </header>
-
-            <div class="post-content">
-                <h2>Introduction</h2>
-                <p>Welcome to the ultimate guide to tech. In this article, we will explore the latest trends in technology, innovative gadgets, and the impact of tech on our daily lives.</p>
-
-                <h3>Latest Trends</h3>
-                <p>The tech industry is constantly evolving, with new trends emerging every year. Here are some of the latest trends:</p>
-                <ul>
-                    <li>Artificial Intelligence and Machine Learning</li>
-                    <li>Blockchain Technology</li>
-                    <li>Internet of Things (IoT)</li>
-                    <li>5G Connectivity</li>
-                </ul>
-
-                <blockquote>
-                    "Technology is best when it brings people together." - Matt Mullenweg
-                </blockquote>
-
-                <h3>Innovative Gadgets</h3>
-                <p>From smart home devices to wearable technology, here are some of the most innovative gadgets available today:</p>
-                <ul>
-                    <li>Smart Speakers</li>
-                    <li>Wearable Fitness Trackers</li>
-                    <li>Smart Home Security Systems</li>
-                    <li>Augmented Reality Headsets</li>
-                </ul>
-
-                <h3>Impact on Daily Life</h3>
-                <p>Technology has a significant impact on our daily lives. It has changed the way we communicate, work, and entertain ourselves. Here are some of the ways tech is influencing our daily activities:</p>
-                <ul>
-                    <li>Remote Work and Collaboration Tools</li>
-                    <li>Streaming Services and Digital Media</li>
-                    <li>Online Shopping and E-commerce</li>
-                    <li>Social Media and Networking Platforms</li>
-                </ul>
-            </div>
-
-            <footer class="post-footer">
-                <div class="post-tags">
-                    <a href="#" class="post-tag">Tech</a>
-                    <a href="#" class="post-tag">Gadgets</a>
-                    <a href="#" class="post-tag">Trends</a>
-                </div>
-                <a href="#" class="post-comment-count">5 Comments</a>
-            </footer>
-
-            <section class="post-author">
-                <img src="author.jpg" alt="Author" class="author-image" width="50" height="50">
-                <div class="author-details">
-                    <h3>John Doe</h3>
-                    <p class="author-bio">John is a tech enthusiast and a writer with over 10 years of experience in the tech industry.</p>
-                </div>
-            </section>
-        </article>
-
-        <section class="post-comments">
-            <h2 class="section-title">Comments</h2>
-            <div class="form-group">
-                <label for="comment">Leave a Comment:</label>
-                <textarea id="comment" rows="4"></textarea>
-            </div>
-            <div class="form-group">
-                <button type="button">Submit</button>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-brand">
-                <img src="logo.png" alt="Techium Logo">
-            </div>
-            <div class="footer-menu">
-                <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Facebook</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Twitter</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">LinkedIn</a></li>
-                </ul>
-            </div>
+        <div class="form-field">
+          <span class="form-field-container">
+            <input type="email" id="email" name="email" required>
+            <i class="form-field-icon"></i>
+          </span>
+          <p class="form-help">Please enter a valid email address.</p>
         </div>
-    </footer>
+        <div class="form-field">
+          <span class="form-field-container">
+            <input type="password" id="password" name="password" required>
+            <i class="form-field-icon"></i>
+          </span>
+          <p class="form-help">Your password must be at least 8 characters long.</p>
+        </div>
+      </fieldset>
 
-    <script>
-        // Toggle dark mode
-        document.querySelector('.header').addEventListener('dblclick', () => {
-            document.documentElement.dataset.theme =
-                document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-        });
-    </script>
+      <fieldset>
+        <legend>Form Section 2</legend>
+        <div class="form-field">
+          <span class="form-field-container">
+            <input type="text" id="address" name="address" required>
+            <i class="form-field-icon"></i>
+          </span>
+          <p class="form-help">Please enter your address.</p>
+        </div>
+        <div class="form-field">
+          <span class="form-field-container">
+            <input type="tel" id="phone" name="phone" required>
+            <i class="form-field-icon"></i>
+          </span>
+          <p class="form-help">Please enter your phone number.</p>
+        </div>
+      </fieldset>
+    </article>
+  </main>
 </body>
 </html>
